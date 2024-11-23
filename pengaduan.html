@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="fixed top-0 right-0 left-0 mb-6 leading-1">
+        <div class="bg-blue-900 w-full p-[1px] lin">
+            <h1 class="text-center text-gray-200 text-xl font-bold md:text-2xl">Layanan Pengaduan <br> <span class="text-yellow-500"> Karang Taruna </span> </h1>
+        </div>
+        <nav class="shadow-lg bg-blue-200">
+            <ul class="flex justify-evenly gap-6 bg-bl w-full py-2 px-1 md:justify-evenly">
+                <li class="text-blue-700 font-bold text-[14px] border-b-2 border-transparent transition-all duration-[0.5s] hover:border-blue-300 md:text-xl cursor-pointer"><a href="index.html"></a>Beranda</li>
+                <li class="text-blue-700 font-bold text-[14px] border-b-2 border-transparent transition-all duration-[0.5s] hover:border-blue-300 md:text-xl cursor-pointer"><a href="#"></a>Panduan</li>
+                <li class="text-blue-700 font-bold text-[14px] border-b-2 border-transparent transition-all duration-[0.5s] hover:border-blue-300 md:text-xl cursor-pointer"><a href="pengaduan.html">Pengaduan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="w-full h-[120vh] py-10 px-10 bg-blue-100 flex flex-col items-center justify-center"> 
+        <div class="bg-blue-50 p-6 mx-auto shadow-lg w-full">
+            <div>
+                <h1 class="text-2xl font-bold mb-2 text-blue-800">Form Pengaduan</h1>
+            </div>
+            <form action="">
+                <div class="mb-4">
+                    <label for="name" class="block text-blue-700 font-medium mb-2">Nama</label>
+                    <input name="name" type="text" id="name" class="w-full border border-blue-400 rounded px-3 py-2" placeholder="Masukkan nama Anda" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-blue-700 font-medium mb-2">Email</label>
+                    <input name="email" type="email" id="email" class="w-full border border-blue-400 rounded px-3 py-2" placeholder="Masukkan email Anda" required>
+                </div>
+                <div class="mb-4">
+                    <label for="text-area" class="block text-blue-700 font-medium mb-2">Pesan</label>
+                    <textarea name="pesan" type="text-area" id="text-area" class="w-full border border-blue-400 rounded px-3 py-2" placeholder="Tuliskan pesan anda.." required></textarea>
+                </div>
+                <button type="submit" class="inline-block rounded bg-indigo-600 px-6 py-2 text-sm font-medium text-white transition hover:scale-100 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"">Kirim</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer class="bg-blue-900 py-4 text-blue-300">
+        <!-- Informasi Media Sosial -->
+        <div class="flex flex-col text-center gap-4 md:flex-row justify-around">
+            <div>
+                <h2 class="font-semibold hover:text-blue-700 transition-colors duration-300">Instagram : @crewertepitu</h2>
+                <h2 class="font-semibold hover:text-blue-700 transition-colors duration-300">Tiktok : @crew_ertepitu</h2>
+            </div>
+            
+            <!-- Navigasi -->
+            <div>
+                <ul class="flex justify-center gap-4 md:flex-col">
+                    <li class="font-semibold">
+                        <a href="#" class="hover:text-yellow-500 transition-colors duration-300">Beranda</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#" class="hover:text-yellow-500 transition-colors duration-300">Panduan</a>
+                    </li>
+                    <li class="font-semibold">
+                        <a href="#" class="hover:text-yellow-500 transition-colors duration-300">Pengaduan</a>
+                    </li>
+                </ul>
+            </div>
+        
+            <!-- Ikon Media Sosial -->
+            <div class="flex justify-center gap-4">
+                <div class="hover:scale-110 transition-transform duration-300">
+                    <a href="">
+                        <img src="logoInstagram.svg" alt="Instagram Logo" width="24">
+                    </a>
+                </div>
+                <div class="hover:scale-110 transition-transform duration-300">
+                    <img src="logoTiktok.svg" alt="Tiktok Logo" width="24">
+                    <a href="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="w-full bg-blue-300 mt-4 py-2 text-sm text-blue-900 text-center">
+            <p>&copy; 2024 Moch. Rafi Andi Prayitno</p>
+        </div>
+    </footer>
+</body>
+</html>
